@@ -1,0 +1,86 @@
+@import 'variables'; //пишем переменные
+@import 'reset'; //сборс стилей
+@import 'fonts'; //подключаем шрифты (локально)
+
+//подключаем БЭМ блоки
+@import 'blocks/choose';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/technologies';
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+}
+
+.section-1 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: $zeroColor;
+  color: $firstColor;
+  height: 100vh;
+  transition: .2s;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: $firstColor;
+  padding: 40px;
+  overflow: auto;
+}
+
+@media (max-width: 1199px) {
+  /* CSS для ширины от 992px до 1199px */
+  
+}
+
+
+@media (max-width: 991px) {
+  /* CSS для ширины от 768px до 991px */
+
+  body {
+    overflow: auto;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  .section-1 {
+    padding: 20px;
+    width: 100%;
+    height: 40vh;
+  }
+  
+  .section-2 {
+    width: 100%;
+    padding: 20px;
+    overflow: auto;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+
+  .section-1 {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .section-2 {
+    height: 60vh;
+  }
+}
+
+
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+}

@@ -1,0 +1,88 @@
+.technologies {
+  padding: 200px 50px;
+}
+
+.technologies__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.technologies__item {
+  border: 1px solid $firstColor;
+  text-align: center;
+  width: fit-content;
+  padding: 10px 10px 6px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.technologies__link {
+  color: $firstColor;
+  font-size: 18px;
+  font-family: 'Presstoplay', sans-serif;
+}
+
+
+
+
+.technologies__item:hover {
+  animation: borderAnimation 1s ease 0s infinite normal forwards;
+
+  @keyframes borderAnimation {
+
+    0%,
+    50%,
+    100% {
+      border: 1px solid #f0eeef;
+    }
+
+    25%,
+    75% {
+      border: 1px solid transparent;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  /* CSS для ширины от 992px до 1199px */
+
+}
+
+
+@media (max-width: 991px) {
+  /* CSS для ширины от 768px до 991px */
+  .technologies {
+    padding: 40px 30px;
+  }
+
+  .technologies__item {
+    padding: 5px 5px;
+  }
+
+
+  .technologies__link {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+  .technologies {
+    padding: 10px 10px;
+  }
+
+  .technologies__link {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+
+  .technologies__link {
+    font-size: 8px;
+  }
+}
