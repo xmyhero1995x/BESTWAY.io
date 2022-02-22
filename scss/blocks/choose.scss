@@ -1,0 +1,106 @@
+.choose__inner {
+  font-family: 'Presstoplay', sans-serif;
+}
+
+.choose-line--top {
+  border-top: 2px solid $secondColor;
+}
+
+.choose-line--bottom {
+  border-bottom: 2px solid $secondColor;
+}
+
+.choose__list {
+  font-size: 24px;
+  padding: 30px;
+}
+
+.choose__item {
+  cursor: pointer;
+  padding: 20px;
+}
+
+.choose__title {
+  font-size: 28px;
+  padding-top: 150px;
+}
+
+.choose__desc {
+  pointer-events: none;
+  font-family: 'Presstoplay', sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  opacity: 0;
+  max-height: 0;
+  // transition: .2s;
+}
+
+.choose__item.open .choose__desc {
+  pointer-events: all;
+  opacity: 1;
+  max-height: 1000vh;
+  padding-top: 20px;
+  transition: .3s;
+}
+
+@media (max-width: 1199px) {
+  /* CSS для ширины от 992px до 1199px */
+
+}
+
+
+@media (max-width: 991px) {
+  /* CSS для ширины от 768px до 991px */
+
+  .choose__title {
+    font-size: 24px;
+    padding-top: 50px;
+  }
+
+  .choose-line--top {
+    border-top: 1px solid $secondColor;
+  }
+
+  .choose-line--bottom {
+    border-bottom: 1px solid $secondColor;
+  }
+
+
+  .choose__list {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .choose__item {
+    cursor: pointer;
+    padding: 10px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  /* CSS для ширины от 576px до 767px */
+}
+
+
+@media (max-width: 575px) {
+  /* CSS для ширины до 575px (включительно) */
+  .choose__inner {
+    justify-content: center;
+  }
+  
+
+  .choose__title {
+    font-size: 16px;
+    padding-top: 30px;
+  }
+
+  .choose__list {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .choose__desc {
+    font-size: 8px;
+  }
+}
