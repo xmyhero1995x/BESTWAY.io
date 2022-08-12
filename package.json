@@ -44,5 +44,7 @@
     "app/html/**/*.html",
     "app/scss/**/*.scss"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "gulp-install": "^1.1.0"
+  }
 }
